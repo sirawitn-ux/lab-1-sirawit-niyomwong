@@ -1,3 +1,225 @@
-<ul>
-<li></li><a href="fglkdfjmbg;kfd.html">Lab01</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Lab - Project Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(120deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+
+        .game-card {
+            background: rgba(30, 41, 59, 0.8);
+            border: 2px solid rgba(96, 165, 250, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .game-card:hover {
+            border-color: rgba(96, 165, 250, 0.6);
+            box-shadow: 0 0 20px rgba(96, 165, 250, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .game-title {
+            font-size: 2rem;
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+
+        .game-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .game-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .info-item {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 3px solid #60a5fa;
+        }
+
+        .info-label {
+            color: #94a3b8;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .info-value {
+            color: #f1f5f9;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-width: 140px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(120deg, #60a5fa, #3b82f6);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(96, 165, 250, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(96, 165, 250, 0.1);
+            color: #60a5fa;
+            border: 2px solid #60a5fa;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(96, 165, 250, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .game-info {
+                grid-template-columns: 1fr;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Game Lab</h1>
+            <p>Interactive Gaming Experience</p>
+        </header>
+
+        <div class="game-card">
+            <div class="game-title">Lab Project Game</div>
+            
+            <p class="game-description">
+                Experience an interactive game built with Godot Engine, compiled for the web. 
+                This project showcases modern game development with WebAssembly technology.
+            </p>
+
+            <div class="game-info">
+                <div class="info-item">
+                    <div class="info-label">Engine</div>
+                    <div class="info-value">Godot Engine</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Platform</div>
+                    <div class="info-value">Web (WebAssembly)</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Status</div>
+                    <div class="info-value">Ready to Play</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Browser Support</div>
+                    <div class="info-value">Modern Browsers</div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <a href="fglkdfjmbg;kfd.html" class="btn btn-primary">
+                    ▶️ Play Game
+                </a>
+                <button class="btn btn-secondary" onclick="alert('Game Controls:\n- Use arrow keys or WASD to move\n- Click/Touch to interact\n- ESC to pause')">
+                    ❓ How to Play
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 Game Lab Project | Built with Godot Engine</p>
+        </footer>
+    </div>
+</body>
+</html>
